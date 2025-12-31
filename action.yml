@@ -1,0 +1,28 @@
+name: Dotenv Action
+description: .env file load action
+
+inputs:
+  files:
+    description: 'Paths to env files (multiline support)，default .env'
+    required: false
+    default: '.env'
+  filter:
+    description: 'Regex pattern to filter keys (e.g., ^JAVA_)'
+    required: false
+    default: '.*'
+  export:
+    description: 'Export variables to the global environment (GITHUB_ENV)'
+    required: false
+    default: 'false'
+  mask:
+    description: 'Mask values in logs to keep them secret'
+    required: false
+    default: 'false'
+
+outputs:
+  combined:
+    description: 'All variables in KEY=VALUE format (multiline)'
+
+runs:
+  using: node20
+  main: index.js

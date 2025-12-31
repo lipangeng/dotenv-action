@@ -1,0 +1,32 @@
+{
+  "name": "dotenv-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipangeng/dotenv-action.git"
+  },
+  "keywords": [],
+  "author": "李盼庚",
+  "maintainers": [
+    {
+      "name": "李盼庚",
+      "email": "lipangeng@outlook.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lipangeng/dotenv-action/issues"
+  },
+  "homepage": "https://github.com/lipangeng/dotenv-action#readme",
+  "dependencies": {
+    "@actions/core": "^2.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  }
+}
