@@ -1,0 +1,15 @@
+name: Publish Action
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Update Major Tag
+        uses: actions/publish-action@v0.4.0 # 这是一个常用的自动移动标签的工具
+        with:
+          source-tag: ${{ github.ref_name }}
